@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+
+		<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+		<title>Design de Interiores</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Guilherme Alves">
+		<meta name="keywords" content="Design,interiores,Design de Interiores,móveis,mobiliário">
+		<meta name="description" content="Design de interiores é a área que planeja, idealiza e realiza projetos de espaços, sempre visando a funcionalidade e qualidade de vida">
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	</head>
+
+	<body>
+		<header>
+			<img src="img\banner.png" alt="banner com a logo ao centro e uma imagem de um cômodo ao fundo" />
+		</header>
+		
+		<nav>
+			<a class="a-menu" href="index.html">HOME</a>
+			<a class="a-menu" href="index.html#Vantagens">VANTAGENS</a>
+			<a class="a-menu" href="index.html#Estilos">ESTILOS</a>
+			<a class="a-menu" href="index.html#Video">VÍDEO</a>
+			<a class="a-menu" href="#">SOBRE</a>
+        </nav>                                                                           
+			
+		<section>
+			<h1>Sobre</h1>
+		
+			<p id="p-form">Faça seu cadastro, receba mais informações e agende uma visita</p>
+			<form name="frm-sobre" method="GET" action="">
+				
+				<label for="Nome">Nome:</label>
+				<input id="Nome" type="text" name="Nome" value="" placeholder="Nome Completo" />
+
+
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" value="" placeholder="nome@email.com"  />
+
+				<label for="senha">Senha:</label>
+				<input id="senha" type="password" name="senha" value="" placeholder="Somente números"  />
+
+				<label for="cel">Celular:</label>
+				<input id="cel" type="tel" name="cel" value="" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"  />
+
+				<div class="momento">
+					<div>
+						<label for="date">Data:</label>
+						<input id="date" type="date" name="date" />
+					</div>
+
+					<div>
+						<label for="time">Hora:</label>
+						<input id="time" type="time" name="time" />
+					</div>
+
+					<div>
+						<label for="quant">Atendimentos:</label>
+						<input id="quant" type="number" name="quant" min="1" step="1" max="4" />
+					</div>
+				</div>
+
+				<label for="nivel">Nível</label>
+				<select id="nivel" name="nivel">
+					<option value="">Selecione...</option>
+					<option value="basico">Básico</option>
+					<option value="interm">Intermediário</option>
+					<option value="avancado">Avançado</option>
+				</select>
+
+				<fieldset>
+					<legend>Gênero:</legend>
+					<input type="radio" name="genero" value="masc" id="masc" /><label for="masc">Masculino</label><br/>
+					<input type="radio" name="genero" value="fem" id="fem" /><label for="fem">Feminino</label><br/>
+					<input type="radio" name="genero" value="outro" id="outro" /><label for="outro">Prefiro não informar</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Estilos de interesse</legend>
+					<input type="checkbox" name="i-estilos" value="moderno" id="moderno" />
+					<label for="moderno">Moderno</label><br/>
+
+					<input type="checkbox" name="i-estilos" value="minimalista" id="minimalista" />
+					<label for="minimalista">Minimalista</label><br/>
+
+					<input type="checkbox" name="i-estilos" value="rustico" id="rustico" />
+					<label for="rustico">Rústico</label><br/>
+
+					<input type="checkbox" name="i-estilos" value="vintage" id="vintage" />
+					<label for="vintage">Vintage</label><br/>
+
+				</fieldset>
+
+				<label for="msg">Mensagem:</label>
+				<textarea id="msg" name="msg" cols="50" rows="4" /></textarea>
+
+				<div class="momento">
+					<input type="submit" name="bt-enviar" value="ENVIAR" />
+					<input type="reset" name="br-limpar" value="LIMPAR" />
+				</div>
+
+			</form>
+		</section>
+
+			
+		<footer>
+			<p>Desenvolvido por <a href="https://github.com/ItsGui8" target="_blank">Guilherme Alves</a> - 2022</p>
+		</footer>
+
+	<body/>
+
+</html>
